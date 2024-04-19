@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recipe Access Company</title>
+<style>
+body {
+    background-color: #E0FFFF;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #FFD700;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #1E90FF;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+footer {
+    background-color: #FFD700;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Welcome to Recipe Access Company</h1>
+    <a href="#home" class="button">Home</a> 
+    <a href="#products" class="button">Products</a> 
+</header>
+<img src="image.jpg" alt="Recipe Example">
+<h2>Chocolate Chip Cookies</h2>
+<p>Ingredients: Flour, sugar, butter, eggs, baking soda, baking powder, 
+salt, vanilla, chocolate chips.</p>
+<p>Instructions: Mix dry, beat wet, pour, bake, cool, cut, pack.</p>
+<h2>Cream Pie</h2>
+<p>Ingredients: Flour, sugar, butter, eggs, milk, vanilla, cornstarch.</p>
+<p>Instructions: Whisk, beat, heat, stir, pour, bake, cool, chill, slice.</p>
+<footer>
+    <p>&copy; 2018 Recipe Access Company. All rights reserved.</p>
+    <form action="mailto:info@recipeaccesscompany.com" method="post" enctype="text/plain">
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>
+</footer>
